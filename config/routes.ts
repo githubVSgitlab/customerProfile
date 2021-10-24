@@ -53,16 +53,46 @@
     redirect: '/welcome',
   },
   {
-    name: '客户资料',
+    name: '客户资料-table',
     icon: 'table',
-    path: '/customer-profile',
+    path: '/customerProfile',
     component:'./CustomerProfile'
+  },
+  {
+    name: '客户资料-proTable',
+    icon: 'table',
+    path: '/customer_profile',
+    component:'./CustomerProfile-useProtable'
   },
   {
     name: 'basic-list',
     icon: 'table',
     path: '/basic-list',
     component:'./BasicList'
+  },
+  {
+    name: 'TestUseState',
+    icon: 'crown',
+    path: '/useStateFun',
+    // 这里如果component给了值就会走这里的component，会导致一个页面有两个组件
+    // component: './TestUseState',
+    routes: [
+      {
+        path: '/useStateFun/clickPopup',
+        name: '点击弹窗',
+        icon: 'smile',
+        component: './TestUseState/components/ClickPopup',
+      },
+      {
+        path: '/useStateFun/clickOneDisplayOne',
+        name: '点击显示对应的',
+        icon: 'smile',
+        component: './TestUseState/components/ClickOneDisplayOne',
+      },
+      {
+        component: './404',
+      },
+    ],
   },
   {
     component: './404',

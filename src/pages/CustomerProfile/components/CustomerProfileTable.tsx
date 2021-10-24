@@ -1,9 +1,7 @@
-import useRequest from "@ahooksjs/use-request";
 import { BarsOutlined, DeleteOutlined, SearchOutlined } from "@ant-design/icons";
 import { useState } from "react";
 import { Form, Input, Row, Col, Select, Card, Button, Table, Tag, Space } from "antd";
 import request from "umi-request";
-import { ValueIterateeCustom, values } from "@umijs/deps/compiled/lodash";
 const { Option } = Select;
 interface CustomerTableProps {
 
