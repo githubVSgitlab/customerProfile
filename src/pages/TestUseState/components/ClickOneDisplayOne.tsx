@@ -4,6 +4,7 @@ import { Row, Col, Card, List } from 'antd';
 import ProTable from '@ant-design/pro-table';
 
 const { Search } = Input;
+
 const columns = [
     {
         title: 'ID',
@@ -65,7 +66,7 @@ const ClickDisplay = () => {
     const [info, setInfo] = useState([3]);
 
     const infoChange = (val: number) => {
-        // console.log(val);
+        console.log(val);
         setInfo([val]);
     };
 

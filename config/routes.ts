@@ -95,6 +95,28 @@
     ],
   },
   {
+    name: '表单表格',
+    icon: 'crown',
+    path: '/tableAndForm',
+    routes: [
+      {
+        path: '/tableAndForm/table',
+        name: '表格',
+        icon: 'smile',
+        component: './TableAndForm/components/Table',
+      },
+      {
+        path: '/tableAndForm/form',
+        name: '表单',
+        icon: 'smile',
+        component: './TableAndForm/components/Form',
+      },
+      {
+        component: './404',
+      },
+    ],
+  },
+  {
     component: './404',
   },
 ];
